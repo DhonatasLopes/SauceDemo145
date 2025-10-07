@@ -1,0 +1,13 @@
+Modos de excecução
+- Headless (padrão): sem exibição
+--> não tem interferencia do usuário
+--> leve
+_ Headed: com exibição
+
+melhores localizadores 2025
+- data test (w3c)
+- id 
+- name
+- ccselector
+- class ou tag 
+- xpath
