@@ -30,8 +30,8 @@ function compute_run_folder(baseDir){
     const mm = pad2(now.getMinutes());   // Minutos com 2 digitos
     const ss = pad2(now.getSeconds());   // Segundos com 2 digitos
 
-    // const Mes = String(now.getMonth()).padStart(2, '0')    
-    // const Dia = String(now.getDate()).padStart(2, '0')   
+   //const Mes = String(now.getMonth()).padStart(2, '0')    
+   //const Dia = String(now.getDate()).padStart(2, '0')   
 
     // Criar as pastas
     const runDir = path.join(baseDir, `${yyyy}`, `${MM}`, `${dd}`, `${HH}-${mm}-${ss}`)

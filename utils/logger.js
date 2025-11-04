@@ -1,14 +1,14 @@
 const { test: base } = require('@playwright/test')
-const fs = rquite('fs')
+const fs = require('fs')
 const path = require('path')
 
-// Formatar espaçamentop entre datas AM-PM
+// Formatar espaçamento entre datas AM-PM
 function isoTs() {
     const nova_data = new Date();
     return nova_data.toISOString().replace('T', ' ').replace('Z', '')
 }
 
-const LOGS_DIR = process.env.LOGS_DIR || path.join(process.cwd, 'artifacts', 'logs')
+const LOGS_DIR = process.env.LOGS_DIR || path.join(process.cwd(), 'artifacts', 'logs')
 if (!fs.existsSync(LOGS_DIR)) fs.mkdirSync(LOGS_DIR, {recursive: true})
 
 // cria o arquivo de log para a excecução

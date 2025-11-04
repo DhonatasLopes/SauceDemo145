@@ -29,7 +29,7 @@ module.exports = defineConfig({
         navigationTimeout: 20000, // timeout se parar o navegador
  
         launchOptions: {
-            slowMo: 0    // espere 1 segundo entre cada ação
+            slowMo: 5    // espere 1 segundo entre cada ação
         }
     },
  
