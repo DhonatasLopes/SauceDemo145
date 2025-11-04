@@ -12,7 +12,9 @@ process.env.RUN_DIR         = runDir
 process.env.SCREENSHOTS_DIR = screenshotsDir
  
 module.exports = defineConfig({
+
     testDir: './tests',   // nossos testes estão na pasta tests
+
     timeout: 30000,      // 30_000 = 30 segundos
     fullyParallel: true, // execução em paralelo / multi thread
     outputDir: resultsDir,
@@ -29,7 +31,9 @@ module.exports = defineConfig({
         navigationTimeout: 20000, // timeout se parar o navegador
  
         launchOptions: {
+
             slowMo: 5    // espere 1 segundo entre cada ação
+
         }
     },
  

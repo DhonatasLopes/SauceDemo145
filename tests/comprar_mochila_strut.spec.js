@@ -3,7 +3,7 @@ import { snap } from '../utils/snap.js'
 
 // funções de apoio
 async function login_step(page, testInfo){
-await page.goto('/')
+await page.goto('https://www.saucedemo.com/')
 
         await expect(page).toHaveURL('/') // verificação classica
         await expect(page.locator('[data-test="login-button"]')).toHaveText('Login')
@@ -123,4 +123,4 @@ test.describe('SauceDemo - fluxo principal de compra', () => {
 //             })
 
 //     }) 
-}) // fim do describe
+})
